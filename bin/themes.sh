@@ -1,5 +1,6 @@
 themes=(
 	casper
+	casper-mod
 	lyra
 )
 
