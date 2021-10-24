@@ -71,9 +71,7 @@ function createConfig() {
       connection: getMysqlConfig(envValues.mysqlDatabaseUrl),
       pool: { min: 0, max: 5 },
       debug: false,
-      ssl: {
-        ca: process.env.CA
-      }
+
     },
     server: {
       host: "0.0.0.0",
@@ -113,6 +111,9 @@ function getMysqlConfig(connectionUrl) {
     user: dbUser,
     password: dbPassword,
     database: dbName,
+    ssl: {
+      ca: process.env.CA
+    }
   };
   return dbConnection;
 }
