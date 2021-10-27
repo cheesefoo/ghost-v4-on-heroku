@@ -1,1 +1,1 @@
-var ghost = require("ghost");
+import ghost from "ghost";
