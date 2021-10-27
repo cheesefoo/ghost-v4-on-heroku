@@ -1,0 +1,22 @@
+routes:
+
+collections:
+  /en/:
+    permalink: /en/{slug}/
+    template: index
+    filter: 'tag:-hash-ja'
+  /ja/:
+    permalink: /ja/{slug}/
+    template: index-ja
+    filter: 'tag:hash-ja'
+  /it/:
+    permalink: /it/{slug}/
+    template: index-it
+    filter: 'tag:hash-it'  
+  /es/:
+    permalink: /es/{slug}/
+    template: index-es
+    filter: 'tag:hash-es'
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
