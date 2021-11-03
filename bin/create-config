@@ -111,7 +111,7 @@ function getMysqlConfig(connectionUrl) {
     user: dbUser,
     password: dbPassword,
     database: dbName,
-    ssl: true
+    ssl: "Amazon RDS"
   };
   return dbConnection;
 }
