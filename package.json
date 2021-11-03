@@ -14,9 +14,9 @@
     "node": "14.X"
   },
   "dependencies": { 
-    "ghost": "latest",
-    "ghost-storage-adapter-s3": "latest",
-    "ghost-storage-cloudinary": "latest",
+    "ghost": "^4.7.0",
+    "ghost-storage-adapter-s3": "^2.8.0",
+    "ghost-storage-cloudinary": "^2.1.5",
     "mysql": "^2.18.1"
   },
   "scripts": {
