@@ -98,11 +98,11 @@ function getMysqlConfig(connectionUrl) {
   var dbAuth = dbConfig.auth ? dbConfig.auth.split(":") : [];
   var dbUser = dbAuth[0];
   var dbPassword = dbAuth[1];
-
+  var dbName = "ghost";
   if (dbConfig.pathname == null) {
-    var dbName = "ghost";
+    dbName = "ghost";
   } else {
-    var dbName = dbConfig.pathname.split("/")[1];
+    dbName = dbConfig.pathname.split("/")[1];
   }
 
   var dbConnection = {
