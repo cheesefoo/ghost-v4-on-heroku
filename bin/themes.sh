@@ -1,4 +1,5 @@
 themes=(
+	casper
 	casper-mod
 )
 
