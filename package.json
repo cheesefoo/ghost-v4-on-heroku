@@ -1,0 +1,19 @@
+{
+  "name": "ghost-v4-on-heroku",
+  "version": "4.2.2",
+  "description": "Deploy latest ghost v4 on Heroku",
+  "main": "thelovekesh.js",
+  "engines": {
+    "node": "14.X"
+  },
+  "dependencies": {
+    "ghost": "^4.7.0",
+    "ghost-storage-adapter-s3": "^2.8.0",
+    "ghost-storage-cloudinary": "^2.1.5",
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "start": "node thelovekesh.js",
+    "postinstall": "bash bin/cloudinary.sh && bash bin/aws-s3.sh && bin/init-deployment"
+  }
+}
