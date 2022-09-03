@@ -6,6 +6,6 @@ pwd
 echo "config.production.json →"
 cat "config.production.json"
 
-/opt/render/project/src/bin/wait-for-db
+node ./bin/wait-for-db.js
 
 knex-migrator init --mgpath node_modules/ghost
