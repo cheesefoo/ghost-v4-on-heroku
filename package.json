@@ -4,12 +4,14 @@
   "description": "Deploy latest ghost v4 on Heroku",
   "main": "thelovekesh.js",
   "engines": {
-    "node": "14.X"
+    "node": "12.X"
   },
   "dependencies": {
-    "ghost": "4.7.0",
+    "casper": "github:TryGhost/Casper#main",
+    "ghost": "^4.7.0",
     "ghost-storage-adapter-s3": "^2.8.0",
     "ghost-storage-cloudinary": "^2.1.5",
+    "lyra": "github:TryGhost/lyra#main",
     "mysql": "^2.18.1"
   },
   "scripts": {
