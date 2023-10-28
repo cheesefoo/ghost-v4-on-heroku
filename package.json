@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "node thelovekesh.js",
+    "get-cert": "bash ./bin/get-cert.sh",
     "postinstall": "bash ./bin/cloudinary.sh && bash ./bin/aws-s3.sh && node ./bin/create-config.js"
   }
 }
