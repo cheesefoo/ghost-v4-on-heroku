@@ -111,6 +111,9 @@ function getMysqlConfig(connectionUrl) {
     user: dbUser,
     password: dbPassword,
     database: dbName,
+    ssl:{
+      rejectUnauthorized: true
+    }
     // ssl:{
     //   ca: fs.readFileSync(path.join(appRoot,'global-bundle.pem'), "utf-8")
     // }
