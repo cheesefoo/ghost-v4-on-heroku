@@ -111,9 +111,9 @@ function getMysqlConfig(connectionUrl) {
     user: dbUser,
     password: dbPassword,
     database: dbName,
-    ssl:{
-      ca: fs.readFileSync(path.join(appRoot,'global-bundle.pem'), "utf-8")
-    }
+    // ssl:{
+    //   ca: fs.readFileSync(path.join(appRoot,'global-bundle.pem'), "utf-8")
+    // }
     // ssl: "Amazon RDS"
   };
   return dbConnection;
